@@ -1,1 +1,3 @@
-(def {{name}} :foo)
+(ns {{name}})
+
+

@@ -1,22 +1,30 @@
-# simple-layout
+# lein-simple-layout
 
-A Leiningen template for FIXME.
+A Leiningen template for creating projects with a simple layout.
+
+This template creates a simple project with 3 files: `.gitignore`, 
+`project.clj` and `<project-name>.clj`. It's perfect for when you want to hack
+on some Clojure code while still retaining the power of Leiningen.
 
 ## Usage
 
-FIXME
+By default, the template will create a project with Clojure 1.10.0 as the sole
+dependency.
+
+```sh
+lein new simple-layout <project-name>
+```
+
+You can create a project that uses a different version of Clojure by passing
+the optional version argument.
+
+```sh
+lein new simple-layout -- 1.9.0
+```
 
 ## License
 
-Copyright © 2019 FIXME
+The simple-layout template is released into the public domain. See 
+[LICENSE.md][lc] for more details.
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+[lc]: https://github.com/pyrmont/lein-simple-layout/blob/master/LICENSE.md
